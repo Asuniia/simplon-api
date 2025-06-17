@@ -1,0 +1,39 @@
+{
+    "name": "api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "tsx watch index.ts",
+        "db:create:migration": "tsx app/commands/create-migration.ts",
+        "db:migrate": "tsx app/commands/migrate.ts",
+        "db:seed": "tsx app/commands/seed.ts",
+        "db:rollback:seed": "tsx app/commands/rollback-seed.ts",
+        "db:rollback:migration": "tsx app/commands/rollback-migration.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.8.0",
+    "dependencies": {
+        "@types/body-parser": "^1.19.6",
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.3",
+        "@types/swagger-jsdoc": "^6.0.4",
+        "@types/swagger-ui-express": "^4.1.8",
+        "@vinejs/vine": "^3.0.1",
+        "body-parser": "^2.2.0",
+        "cors": "^2.8.5",
+        "express": "^5.1.0",
+        "sequelize": "^6.37.7",
+        "sqlite3": "^5.1.7",
+        "swagger-jsdoc": "^6.2.8",
+        "swagger-ui-express": "^5.0.1",
+        "tsx": "^4.20.3"
+    },
+    "devDependencies": {
+        "node-gyp": "^11.2.0"
+    }
+}
